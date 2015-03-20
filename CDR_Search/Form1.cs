@@ -136,8 +136,7 @@ namespace CDR_Search
                     }
                     if (numLines % 100000 == 0)
                     {
-                        double divder = Convert.ToDouble(int.Parse(this.textBox4.Text.ToString()));
-                        //Convert.ToInt16(Convert.ToDouble(numLines) / divder * 100);
+                        double divder = Convert.ToDouble(int.Parse(this.textBox4.Text.ToString()));                        
                         progressBar1.Invoke((MethodInvoker)delegate { this.progressBar1.Value = Convert.ToInt16(Convert.ToDouble(numLines) / divder * 100); });
                         textBox5.Invoke((MethodInvoker)delegate { this.textBox5.Text = (numLines.ToString()); });
                         textBox6.Invoke((MethodInvoker)delegate { this.textBox6.Text = (found.ToString()); });
