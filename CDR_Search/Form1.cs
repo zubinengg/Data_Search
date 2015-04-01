@@ -73,6 +73,9 @@ namespace CDR_Search
             if (dlg.ShowDialog() == DialogResult.OK)
             {
                 this.textBox1.Text = dlg.FileName;
+                this.textBox4.Text = "";
+                this.textBox5.Text = "";
+                this.textBox6.Text = "";
                 // Set up background worker object & hook up handlers
                 BackgroundWorker bgWorker;
                 bgWorker = new BackgroundWorker();
